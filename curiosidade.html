@@ -3,56 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Curiosidade</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: none;
-            text-align: left;
-        }
-
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        a {
-            color: rgb(255, 0, 0);
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
-    <div>
-        <h1>FAKEPEDIA</h1>
-        <h3>Matérias recomendadas</h3>
-        <ul>
-        
-            <li><a href="index.html">Início</a>
-            <li><a href="historia.html">Renascentismo</a>
-            <li><a href="historia_brasil.html">Descobrimento do Brasil</a>
-            <li><a href="brasil_colonia.html">Brasil Colonia</a></li>
-    </ul>
-    </div>
+    <header>
+        <div class="div_inicio">
+            <a href="index.html"><img src="Imagem/FAKEPEDIA Logo.png" alt="Logo FAKEPEDIA" class="img_logo"></a>
+        </div>
+    </header>
 
-    <div>
-        <main>
-            <H1>Curiosidade do mês</H1>
-           <article> <h2>ornitorrincos:</h2>
+    <main>
+        <div class="div_main">
+        <div class="div_navegacao">
+            <nav>
+                <p> <strong>Menu de navegação</strong></p>
+                <hr>
+                <ul class="lista_menu">
+                    <li><a href="index.html">Início</a>
+                    <li><a href="historia.html">Renascentismo</a>
+                    <li><a href="historia_brasil.html">Descobrimento do Brasil</a>  
+                    <li><a href="brasil_colonia.html">Brasil Colonia</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="div_artigo">
+            <h2>Curiosidade do mês</h2>
+            <hr>
+
+            <article> 
+            <h2>Ornitorrincos:</h2>
+            <hr>
             <p>
                 Você já deve ter ouvido falar dos ornitorrincos, todos sabem que essas criaturas são bastante peculiares afinal elas parecem uma mistura de diversos animais em um só, serio qual outro mamifero bota ovo, tem veneno e garras bastante afiadas mas adivinhe ainda nos dias de hoje este pequeno animal ainda continua nós surpriendendo, afinal ELE BRILHA NO ESCURO.
                 </p>
                 <P>A revista cientifica Mammali publicou a descoberta de que os ornitorrincos tambem apresentam um brilho verde sob luz ultra-violeta. Agora com essa descoberta o ornitorrinco entra para um grupo muito exclusivo, já que é um dos três unicos mamiferos bioflurecentes conhecidos, os outros dois sendo os gambás e os esquilos voadores</p>
                 <img src="Imagem/ornitorrincos-sao-biofluorecentes.webp" alt="Ornitorrinco bioflourecente" width="400px" height="300px">
             </article>
-        </main>
-    </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="div_footer">
+            <div class="div_menu_footer">
+                <nav>
+                    <p> <strong>Veja mais</strong></p>
+                    <hr>
+                    <ul class="lista_menu">
+                        <li><a href="index.html">Início</a>
+                        <li><a href="historia.html">Renascentismo</a>
+                        <li><a href="historia_brasil.html">Descobrimento do Brasil</a>  
+                        <li><a href="brasil_colonia.html">Brasil Colonia</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div_sobre">
+                <h1>Sobre nós</h1>
+                <p>
+                    Um trio unido pelo desejo de uma nota alta em outubro de 2023 criando um landing page com o 
+                    tema de site de enciclopedia sobre fatos, acontecimentos, informações e curiosidades.
+                </p>
+            </div>
+            <div class="div_form">
+                <h3>Nos ajude a melhorar</h3>
+                <form action="#" method="post">
+                    <Label>Nome</Label>
+                    <input type="text" id="nome_completo" name="nome_completo" required> <br>
+
+                    <Label>Email</Label>
+                    <input type="email" id="email_op" name="email_op" required> <br>
+
+                    <textarea name="Nós ajude a melhorar" id="" cols="30" rows="10" required>Deixe aqui suas ideias e opniões
+                    </textarea>
+
+                    <input type="submit" id="submit" name="submit">
+                </form>
+            </div>
+        </div>           
+    </footer>
 </body>
 </html>

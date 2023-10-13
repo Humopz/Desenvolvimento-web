@@ -3,121 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiki</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: none;
-            text-align: left;
-        }
-
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        a {
-            color: rgb(255, 0, 0);
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Fakepedia - Inicio</title>
 </head>
 <body>
     <div>
-        <h1>FAKEPEDIA</h1>
-        <h3>Artigos recomendados</h3>
-        <ul>
-            <li><a href="curiosidade.html">Curiosidades</a>
-            <li><a href="historia.html">Renascentismo</a>
-            <li><a href="historia_brasil.html">Descobrimento do Brasil</a>
-            <li><a href="brasil_colonia.html">Brasil Colonia</a></li>
-        </ul>
-    </div> <br>
+        <header>
+            <div class="div_inicio">
+                <a href="index.html"><img src="Imagem/FAKEPEDIA Logo.png" alt="Logo FAKEPEDIA" class="img_logo"></a> 
+            </div>
+        </header>
 
-    <div>
+        
         <main>
-            <H1>Artigos em destaque </h1>
-                <article><h2>SÃO PAULO</h2>
-                <p>São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554</p><br>
-                <h2>POVOS ORIGINARIOS</h2>
-                <p>A área onde está situada a Grande São Paulo era habitada principalmente pela tribo indígena dos guaianás no período pré-cabralino, povo que também dominava a região do atual Vale do Ribeira. Os índios guaianás eram caçadores-coletores nômades. Eles não habitavam em ocas e tinham o hábito de viver em covas forradas com peles de animais e ramas. No início do século XIX, esse povo indígena estava extinto.</p>
-                <img src="Imagem/shutterstock_1474895630.jpg" alt="Foto da ponte estaida, com predios ao fundo" width="500px" height="400px">
-
-                <h2>O QUE É FILOSOFIA?</h2>
-                <P></P>Filosofia é o estudo de questões gerais e fundamentais sobre a existência, conhecimento, valores, razão, mente, e linguagem; frequentemente colocadas como problemas a se resolver. O termo provavelmente foi cunhado por Pitágoras (c. 570 – 495 a.C.). Os métodos filosóficos incluem o questionamento, a discussão crítica, o argumento racional e a apresentação sistemática. As questões filosóficas clássicas incluem: É possível saber qualquer coisa e provar que se sabe?O que é mais real? Os filósofos também colocam questões mais práticas e concretas, como: Existe uma maneira melhor de se viver? É melhor ser justo ou injusto (se houver como se safar)? Os seres humanos têm livre-arbítrio? <br>
-                <img src="Imagem/pitagoras-l.webp" alt="Escultura de Pitágoras." width="500px" height="400px">
-            </article>
+            <div class="div_main">
+            <div class="div_navegacao">
+                <nav>
+                    <p> <strong>Menu de navegação</strong></p>
+                    <hr>
+                    <ul class="lista_menu">
+                        <li><a href="curiosidade.html">Curiosidades</a>
+                        <li><a href="historia.html">Renascentismo</a>
+                        <li><a href="historia_brasil.html">Descobrimento do Brasil</a></li>
+                        <li><a href="brasil_colonia.html">Brasil Colonia</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div_artigo">
+                <h1>Página Inicial - Artigos em Destaque</h1>
+                <div class="div_artigo_destaque">
+                    <article><h3>SÃO PAULO</h3>
+                    <p>São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554</p><br>
+                    <h3>POVOS ORIGINARIOS</h3>
+                    <p>A área onde está situada a Grande São Paulo era habitada principalmente pela tribo indígena dos guaianás no período pré-cabralino, povo que também dominava a região do atual Vale do Ribeira. Os índios guaianás eram caçadores-coletores nômades. Eles não habitavam em ocas e tinham o hábito de viver em covas forradas com peles de animais e ramas. No início do século XIX, esse povo indígena estava extinto.</p>
+                    <img src="Imagem/shutterstock_1474895630.jpg" alt="Foto da ponte estaida, com predios ao fundo" width="500px" height="400px">
+                </div>
+                <div class="div_artigo_destaque">
+                    <h3>O QUE É FILOSOFIA?</h3>
+                    <P>Filosofia é o estudo de questões gerais e fundamentais sobre a existência, conhecimento, 
+                        valores, razão, mente, e linguagem; frequentemente colocadas como problemas a se resolver. 
+                        O termo provavelmente foi cunhado por Pitágoras (c. 570 – 495 a.C.). Os métodos filosóficos 
+                        incluem o questionamento, a discussão crítica, o argumento racional e a apresentação sistemática. 
+                        As questões filosóficas clássicas incluem: É possível saber qualquer coisa e provar que se sabe?
+                        O que é mais real? Os filósofos também colocam questões mais práticas e concretas, como: Existe 
+                        uma maneira melhor de se viver? É melhor ser justo ou injusto (se houver como se safar)? Os 
+                        seres humanos têm livre-arbítrio?</P>
+                    <img src="Imagem/pitagoras-l.webp" alt="Escultura de Pitágoras." width="500px" height="400px">
+                </article>
+                </div>  
+                <div class="div_artigo_destaque">
+                    <h2>Curiosidades: Animais mais fortes do mundo</h2>
+                    <table>
+                        <tr>
+                            <th>Posição </th>
+                            <th>Animal</th>
+                        </tr>
+                        <td>1</td>
+                        <td>Escaravelho sagrado</td>
+                        <tr>
+                            <td>2</td>
+                            <td>Gorila</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Besouro-rinoceronte</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Anaconda/sucuri</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Formiga-cortadeira</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Águia</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </main>
-    </div>
-    
-    <div>
-        <h2>Curiosidades: Animais mais fortes do mundo</h2>
-    <table>
-        <thead>
-            <tr>
-            <th>Posição </th>
-            <th>Animal</th>
-        </tr>
-        </thead>
-        <td>1</td>
-        <td>Escaravelho sagrado</td>
-        <tr>
-            <td>2</td>
-            <td>Gorila</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Besouro-rinoceronte</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Anaconda/sucuri</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Formiga-cortadeira</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Águia</td>
-        </tr>
-    </table>
-</div>
-    <div>
         
 
         <footer>
-            <div>
-                <h1>Sobre nós</h1>
-                <p>Uma dupla unida pelo desejo de uma nota alta em outubro de 2023 criando um landing page com o tema de site de enciclopedia sobre fatos, acontecimentos, informações e curiosidades.</p>
-        
-            </div>
-            <div>
-            <h3>Nos ajude a melhorar</h3>
-            <form action="#" method="post">
-                <Label>Nome</Label>
-                <input type="text" id="nome_completo" name="nome_completo" required> <br>
+            <hr>
+            <div class="div_footer">
+                <div class="div_menu_footer">
+                    <nav>
+                        <h2> <strong>Veja mais</strong></h2>
+                        <hr>
+                        <ul class="lista_menu">
+                            <li><a href="curiosidade.html">Curiosidades</a>
+                            <li><a href="historia.html">Renascentismo</a>
+                            <li><a href="historia_brasil.html">Descobrimento do Brasil</a></li>
+                            <li><a href="brasil_colonia.html">Brasil Colonia</a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="div_sobre">
+                    <h1>Sobre nós</h1>
+                    <p>
+                        Um trio unido pelo desejo de uma nota alta em outubro de 2023 criando um landing page com o 
+                        tema de site de enciclopedia sobre fatos, acontecimentos, informações e curiosidades.
+                    </p>
+                </div>
+                <div class="div_form">
+                    <h3>Nos ajude a melhorar</h3>
+                    <form action="#" method="post">
+                        <Label>Nome</Label>
+                        <input type="text" id="nome_completo" name="nome_completo" required> <br>
 
-                <Label>Email</Label>
-                <input type="email" id="email_op" name="email_op" required> <br>
+                        <Label>Email</Label>
+                        <input type="email" id="email_op" name="email_op" required> <br>
 
-                <textarea name="Nós ajude a melhorar" id="" cols="30" rows="10" required>Deixe aqui suas ideias e opniões</textarea>
-                <input type="submit" id="submit" name="submit">
-            </form><br>
-            <h4>Veja mais</h4>
-            <ul>
-                <li><a href="curiosidade.html">Curiosidade</a></li>
-                <li><a href="historia.html">Renascentismo</a></li>
-            </ul>
-        </div>
-            
+                        <textarea name="Nós ajude a melhorar" id="" cols="30" rows="10" required>Deixe aqui suas ideias e opniões
+                        </textarea>
+
+                        <input type="submit" id="submit" name="submit">
+                    </form>
+                </div>
+            </div>           
         </footer>
     </div>
 </body>

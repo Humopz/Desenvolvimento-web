@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+ul{
+    margin-left: 1rem; 
+}
+
+li{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+hr{
+    height: 0.5px;
+    background-color: black;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.lista_menu {
+    list-style-type: none;
+    margin-left: 0; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    margin-top: 2rem;
+}
+
+h2{
+    margin-top: 5%;
+}
+
+h3{
+    margin-top: 5%;
+    font-size: 1.1rem;
+}
+
+.div_main{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.div_navegacao{
+    width: 15%;
+    margin-left: 15%;
+    padding-top: 2%;
+}
+
+.div_artigo{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.div_artigo_destaque{
+    background-color: rgb(247, 247, 253);
+    padding: 1.5rem;
+    padding-top: 0.1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.div_inicio{
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 13%;
+}
+
+
+.div_footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgb(247, 247, 253);
+    margin-top: 8%;
+}
+
+.div_menu_footer{
+    width: 20%;
+    padding: 2%;
+}
+
+.div_sobre{
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 2%;
+}
+
+.div_form{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
