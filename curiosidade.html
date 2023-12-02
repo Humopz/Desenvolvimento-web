@@ -8,6 +8,36 @@
     <meta name="description" content="Curiosidade">
     <meta name="keyword" content="pedia, wikipedia, info, informações, curiosidade, curiosidades, ornitorrinco, bioflourecente">
     <meta name="author" content="Gabriel de Oliveira, Emily Angel, Kauan Pires">
+    <script>
+        window.onload = function() {
+            document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+                event.preventDefault(); 
+               
+                var nome = document.getElementById("nome_completo").value;
+                var email = document.getElementById("email_op").value;
+                var feedback = document.getElementById("feedback").value;
+
+                
+                if (nome !== '' && email !== '' && feedback !== '') {
+                   
+                    document.getElementById("agradecimento").innerHTML = "Obrigado pelo seu feedback!";
+                } else {
+                   
+                    var msg = '';
+                    if (nome === '') {
+                        msg += "Por favor, insira seu nome.<br>";
+                    }
+                    if (email === '') {
+                        msg += "Por favor, insira seu email.<br>";
+                    }
+                    if (feedback === '') {
+                        msg += "Por favor, insira seu feedback.<br>";
+                    }
+                    document.getElementById("agradecimento").innerHTML = msg;
+                }
+            });
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -68,21 +98,21 @@
                 </p>
             </div>
             <div class="div_form">
-                <h3>Nos ajude a melhorar</h3>
-                <form action="#" method="post">
-                    <Label>Nome</Label>
-                    <input type="text" id="nome_completo" name="nome_completo" required> <br>
-
-                    <Label>Email</Label>
-                    <input type="email" id="email_op" name="email_op" required> <br>
-
-                    <textarea name="Nós ajude a melhorar" id="" cols="30" rows="10" required>Deixe aqui suas ideias e opniões
-                    </textarea>
-
-                    <input type="submit" id="submit" name="submit">
-                </form>
-            </div>
-        </div>           
-    </footer>
-</body>
-</html>
+                <div>
+                    <h3>Nos ajude a melhorar</h3>
+                    <form action="#" method="post" id="feedbackForm">
+                        <label>Nome</label>
+                        <input type="text" id="nome_completo" name="nome_completo" required> <br>
+            
+                        <label>Email</label>
+                        <input type="email" id="email_op" name="email_op" required> <br>
+            
+                        <label>Feedback</label>
+                        <textarea name="feedback" id="feedback" cols="30" rows="10" required>Deixe aqui suas ideias e opiniões</textarea>
+            
+                        <input type="submit" id="submit" name="submit">
+                    </form>
+                    <p id="agradecimento"></p>
+                </div>
+            </body>
+            </html>
